@@ -1,0 +1,9 @@
+<h1>{{ word.word }}</h1>
+<p>{{ word.meaning }}</p>
+<p>Level: {{ word.level }}</p>
+
+{% if word.image_url %}
+  <img src="{{ word.image_url }}" style="max-width: 400px;">
+{% endif %}
+
+<p><a href="/words/{{ word.slug }}/examples/">Örnek cümleler</a></p>

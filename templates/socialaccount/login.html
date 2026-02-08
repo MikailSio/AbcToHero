@@ -1,0 +1,12 @@
+{% extends "account/base.html" %}
+{% load i18n %}
+
+{% block content %}
+  <h1>{% trans "Google ile Giriş Yap" %}</h1>
+  <p>{% trans "Google hesabınızla giriş yapmak üzeresiniz." %}</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">{% trans "Devam et" %}</button>
+  </form>
+{% endblock %}
