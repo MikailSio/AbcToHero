@@ -37,3 +37,28 @@ staticfiles/
 .idea/
 .vscode/
 
+
+# ==============================
+# DJANGO – LOCAL / RUNTIME FILES
+# ==============================
+
+# Environment variables (secrets)
+.env
+.env.*
+
+# SQLite database (local only)
+db.sqlite3
+*.sqlite3
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Django collected/static & uploads
+staticfiles/
+media/
+
+# Virtual environment
+.venv/
+venv/
+
